@@ -1,0 +1,275 @@
+<html>
+<head>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/Users/leo/Desktop/stay funny/layout_style/index.css">
+        <link rel="stylesheet" href="/Users/leo/Desktop/stay funny/index1.css">
+<style>
+nav .nav-wrapper {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 48px 0;
+}
+
+section#footer {
+  padding: 24px 0;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+}
+
+.stat p {
+  text-transform: uppercase;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stat {
+  border: 1px solid grey;
+  border-left: 1px solid grey;
+  width: calc(100% * (1/2));
+  padding: 32px;
+  text-align: center;
+}
+.counter {
+  font-size: 32px;
+}
+
+.blogpost {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.blogpost .image-wrapper {
+  flex: 4;
+  margin: 0px auto;
+}
+
+.blogpost .content {
+  flex: 4;
+}
+
+.blogpost .footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogpost .footer .row {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogpost .footer .material-icons {
+  max-width: 24px;
+  margin: 0 8px;
+}
+.blogpost .footer-content {
+  display: flex;
+}
+
+.blogpost .read-more {
+  display: flex;
+  justify-content: center;
+}
+
+
+#hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero .container {
+  height: 90vh;
+}
+
+#features .material-icons {
+  font-size: 50px;
+}
+
+
+.flex-dir-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-space-between {
+  justify-content: space-between;
+  
+}
+
+.m-r-16 {
+  margin-right: 16px;
+}
+/*搜尋字*/
+.search1 button::before{
+    content: "搜索";
+}
+
+
+</style>
+</head>
+<body>
+    <div id="root">
+        <div data-reactroot="" id="app">
+            <nav class="teal lighten-1">
+                <div class="nav-wrapper">
+                  <a href=""><img src="https://i.imgur.com/kR4WWFT.png" width="300" height="100%" title="source: imgur.com" /></a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse right">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="mobile-demo" class="right hide-on-med-and-down">
+                        <li><a href="">首頁</a></li>
+                            <li><a href="">最新消息</a></li>
+                            <li><a href="">熱門匿名討論區</a></li>
+                            <li><a href="">住宿匿名討論區</a></li>
+                            <li><a href="">小吃匿名討論區</a></li>
+                        </ul>
+
+                </div>
+            </nav>
+        <section id="hero" class="blue lighten-4" style="background-image:url('https://i.imgur.com/PaZNcgk.jpg');opacity:0.8;height: 600px;">
+                <div class="container  jc-center">
+                  <div style="height: 100px;width: 100px;">
+                  
+                  </div>
+                  <div class="valign center-align white-text" >
+                    <h1>Stay Funny</h1>                      
+                  </div>
+                  <div class="search search1">
+                      <form>
+                          <input type="text" placeholder="輸入關鍵字">
+                          <button type="submit"></button>
+                      </form>                  
+                      </div>
+                      
+                </div>
+        </section>
+        <div id="talkover" style="width: 70%;margin: 0 auto;">
+      
+            <div class="talkOver-box talkOver-box2">
+              <p>最新消息</p>
+                <div >
+                    <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"  /></a>
+                    <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"/></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com" /></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                
+             </div>
+             <div class="talkOver-box talkOver-box2" style="border: none;">
+                    <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"  /></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                    </div>
+                    <div >
+                            <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"/></a>
+                            <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                    </div>
+                    <div >
+                            <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com" /></a>
+                            <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                    </div>
+                   
+                 </div>
+        </div>
+        <div id="talkover" style="width: 70%;margin: 0 auto;">
+      
+            <div class="talkOver-box talkOver-box2">
+              <p>熱門匿名討論區</p>
+                <div >
+                    <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"  /></a>
+                    <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"/></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com" /></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                
+             </div>
+        </div>
+        <div id="talkover" style="width: 70%;margin: 0 auto;">
+      
+            <div class="talkOver-box talkOver-box2">
+              <p>住宿匿名討論區</p>
+                <div >
+                    <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"  /></a>
+                    <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"/></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com" /></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                
+             </div>
+        </div>
+        <div id="talkover" style="width: 70%;margin: 0 auto;">
+      
+            <div class="talkOver-box talkOver-box2">
+              <p>小吃匿名討論區</p>
+                <div >
+                    <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"  /></a>
+                    <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com"/></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                <div >
+                        <a href="https://imgur.com/kR4WWFT"><img src="https://i.imgur.com/kR4WWFT.png" title="source: imgur.com" /></a>
+                        <a href="https://imgur.com/kR4WWFT">stay funny</a>
+                </div>
+                
+             </div>
+        </div>
+        <section id="social" class="grey lighten-2">
+          <div class="container center-align">
+            
+            <div style="text-align: left;">
+            <a href="" style="color: black;font-size: 20px;">關於我們</a>
+            <a href="" style="color: black;font-size: 20px;">聯絡我們</a>
+            <a href="" style="color: black;font-size: 20px;">常見問題</a>
+          </div>
+            <div style="text-align: right;">
+             
+              <div style="float: right;">
+              <a href="https://imgur.com/TczEunO"><img src="https://i.imgur.com/TczEunO.png" title="source: imgur.com" style="width: 150px;"/></a>
+            </div>
+            <div style="text-align: left;float:right;" >
+                <p>下載APP</p>
+              </div>
+          </div>
+        </section>
+
+        </div>
+    </div>
+</body>
+</html>
