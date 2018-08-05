@@ -1,0 +1,375 @@
+<html>
+  <!-- Search bar  -->
+<head>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/Users/leo/Desktop/stay funny/layout_style/index.css">
+        <link rel="stylesheet" href="/Users/leo/Desktop/stay funny/eat_platform/eat_platform.css">
+<style>
+/*This is original webpage */
+nav .nav-wrapper {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 48px 0;
+}
+
+section#footer {
+  padding: 24px 0;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+}
+
+.stat p {
+  text-transform: uppercase;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stat {
+  border: 1px solid grey;
+  border-left: 1px solid grey;
+  width: calc(100% * (1/2));
+  padding: 32px;
+  text-align: center;
+}
+.counter {
+  font-size: 32px;
+}
+
+.blogpost {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.blogpost .image-wrapper {
+  flex: 4;
+  margin: 0px auto;
+}
+
+.blogpost .content {
+  flex: 4;
+}
+
+.blogpost .footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogpost .footer .row {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogpost .footer .material-icons {
+  max-width: 24px;
+  margin: 0 8px;
+}
+.blogpost .footer-content {
+  display: flex;
+}
+
+.blogpost .read-more {
+  display: flex;
+  justify-content: center;
+}
+
+
+#hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#features .material-icons {
+  font-size: 50px;
+}
+
+
+.flex-dir-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-space-between {
+  justify-content: space-between;
+  
+}
+
+.m-r-16 {
+  margin-right: 16px;
+}
+/*搜尋字*/
+.search1 button::before{
+    content: "搜索";
+}
+/*表格*/
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*From other platform*/
+table {
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    font-variant: normal;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.5;
+    
+}
+.tablelist {
+    padding: 0 20px;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.subject-text {
+	display:block;
+}
+.tablelist a {
+    color: black;
+}
+
+table, span, tbody, tfoot, thead, tr ,a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+a:-webkit-any-link {
+   
+    cursor: pointer;
+   
+}
+.pagination {
+    padding: 10px 20px;
+}
+.pagination span.disable {
+    padding: 3px 5px;
+    border: 1px solid #eee;
+    color: #999;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div id="root">
+        <div data-reactroot="" id="app">
+            <nav class="teal lighten-1">
+                <div class="nav-wrapper">
+                  <a href=""><img src="https://i.imgur.com/kR4WWFT.png" width="300" height="100%" title="source: imgur.com" /></a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse right">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="mobile-demo" class="right hide-on-med-and-down">
+                        <li><a href="">首頁</a></li>
+                            <li><a href="">最新消息</a></li>
+                            <li><a href="">熱門匿名討論區</a></li>
+                            <li><a href="">住宿匿名討論區</a></li>
+                            <li><a href="">小吃匿名討論區</a></li>
+                        </ul>
+
+                </div>
+            </nav>
+            <section id="hero" class="blue lighten-4" style="background-image:url('https://i.imgur.com/PaZNcgk.jpg');opacity:0.6;height: 600px;">
+                <div class="container  jc-center">
+                  <div style="height: 100px;width: 100px;">
+                  
+                  </div>
+                  <div class="valign center-align white-text" >
+                    <h1>Stay Funny</h1>                      
+                  </div>
+                  <div class="search search1">
+                      <form>
+                          <input type="text" placeholder="輸入關鍵字">
+                          <button type="submit"></button>
+                      </form>                  
+                      </div>
+                      
+                </div>
+        </section>
+        <div class="tablelist" style="width: 70%;margin: 0 auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="subject">主題</th>
+                        <th style="width: 7%;" >回復</th>
+                        <th style="width: 17%;">作者</th>
+                        <th style="width: 17%;">最新回應</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                      <td class="subject">
+                        <span class="subject-text" style="max-width: 417px; overflow: hidden;">                   
+                        <a href="topicdetail.php?f=625&amp;t=2162423" class="topic_not" title="漫畫與動畫, 人氣: 41360">[公告] 漫畫與動畫區版面，發文規範公告</a>
+                      </span>
+                    </td>
+                    <td style="width: 7%;">0</td>
+                    <td style="width: 17%;">12</td>
+                    <td style="width: 17%;">12</td>
+                    </tr>
+                    <tr>
+                        <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=37&amp;t=5529757" class="topic_top" title="閒聊與趣味, 人氣: 3861">[8月]01會員獨享活動 送你"Sony Cyber-Shot...</a> » </td>
+                        <td width="7%" >11</td>
+                        <td width="17%"><a href=""><p>Mobile01活動小組</p></a></td>
+                        <td width="17%" ><a href=""><p>JOSEPH1977</p></a></td>
+                      </tr>
+                      <tr>
+                          <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                          <td width="7%" class="reply">74</td>
+                          <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                          <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                        </tr>
+                        <tr>
+                            <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                            <td width="7%" class="reply">74</td>
+                            <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                            <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                          </tr>
+                          <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+                            <tr>
+                              <td class="subject"><span class="subject-text" style="max-width: 417px; overflow: hidden;"><span class="redpoint"></span><a href="topicdetail.php?f=638&amp;t=5531657" class="topic_gen" title="新聞與時事, 人氣: 3938">台北媒體已遭中共滲透甚深，政府還在麻木不仁!!!</a> »...</span></td>
+                              <td width="7%" class="reply">74</td>
+                              <td width="17%" class="authur"><a href=""><p>SPITFIRE02</p></a></td>
+                              <td width="17%" class="latestreply"><a href=""><p>SPITFIRE02</p></a></td>
+                            </tr>
+
+                </tbody>
+            </table>
+            <div class="pagination">
+                <span class="disable">
+                  1
+                </span>
+              </div>
+        </div>
+        <section id="social" class="grey lighten-2">
+          <div class="container center-align">
+            
+            <div style="text-align: left;">
+            <a href="" style="color: black;font-size: 20px;">關於我們</a>
+            <a href="" style="color: black;font-size: 20px;">聯絡我們</a>
+            <a href="" style="color: black;font-size: 20px;">常見問題</a>
+          </div>
+            <div style="text-align: right;">
+             
+              <div style="float: right;">
+              <a href="https://imgur.com/TczEunO"><img src="https://i.imgur.com/TczEunO.png" title="source: imgur.com" style="width: 150px;"/></a>
+            </div>
+            <div style="text-align: left;float:right;" >
+                <p>下載APP</p>
+              </div>
+          </div>
+        </section>
+
+        </div>
+    </div>
+</body>
+</html>

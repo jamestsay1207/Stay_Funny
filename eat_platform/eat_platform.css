@@ -1,0 +1,50 @@
+/*�j�M*/
+.search1 input{
+    border: 2px solid rgb(49, 168, 238);
+    border-radius: 3px; /*�ꨤ�ݩ�*/
+    background: black;
+    width:70%;
+    height: 40px;
+    top: 0;
+    right: 0;
+
+}
+.search1 button{
+    background: #0099cc;
+    border-radius: 0 5px 5px 0;
+    width: 15%;
+    height:40px ;
+    top: 50%;
+    right:0 ;
+}
+.search1 button::before{
+    content: "�j��";
+    font-size: 20px;
+    color:white;
+}
+div.search{
+    padding: 40px;
+    text-align: center;
+    
+    
+}
+/*�Q�װ�*/
+.talkOver-box{
+    border: 1px solid white;
+    margin-bottom: 10px;
+    background-color: white;
+    
+    
+}
+.talkOver-box2{
+    overflow: hidden;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+		
+    
+}
+.talkOver-box2 div{float:left;width:430px;padding:0 4px;text-align:center;margin:7px 0;line-height:1.3;}
+.talkOver-box2 img{ display:block; margin:0 auto; margin-bottom:5px; width:350px; height:180px;}
+.talkOver-box2 a{display:block;font-size:13px;line-height: 18px;}
+.talkOver-box2 span{ display:block; text-align:center; width:120px; color:#5e5e5e; margin:0 auto 7px auto;}
+.talkOver-box2 iframe{ margin:10px;}
